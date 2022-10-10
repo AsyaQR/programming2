@@ -1,0 +1,15 @@
+﻿  Source.cpp
+C:\Users\79292\Desktop\hw2\2022.09.03homework3\Task2\Source.cpp(20,27): error C2760: syntax error: unexpected token '>', expected 'expression'
+C:\Users\79292\Desktop\hw2\2022.09.03homework3\Task2\Source.cpp(42,35): error C7576: declaration of 'compare' shadows a template parameter
+C:\Users\79292\Desktop\hw2\2022.09.03homework3\Task2\Source.cpp(42,63): error C7576: declaration of 'sorted' shadows a template parameter
+C:\Users\79292\Desktop\hw2\2022.09.03homework3\Task2\Source.cpp(47,20): error C2244: 'defcompare': unable to match function definition to an existing declaration
+C:\Users\79292\Desktop\hw2\2022.09.03homework3\Task2\Source.cpp(5): message : see declaration of 'defcompare'
+C:\Users\79292\Desktop\hw2\2022.09.03homework3\Task2\Source.cpp(51,19): error C2244: 'defsort': unable to match function definition to an existing declaration
+C:\Users\79292\Desktop\hw2\2022.09.03homework3\Task2\Source.cpp(14): message : see declaration of 'defsort'
+C:\Users\79292\Desktop\hw2\2022.09.03homework3\Task2\Source.cpp(59,21): error C2664: 'void sort<int,0,0,0x0,0x0>(Type *,int)': cannot convert argument 1 from 'int' to 'Type *'
+          with
+          [
+              Type=int
+          ]
+C:\Users\79292\Desktop\hw2\2022.09.03homework3\Task2\Source.cpp(59,15): message : Conversion from integral type to pointer type requires reinterpret_cast, C-style cast or function-style cast
+C:\Users\79292\Desktop\hw2\2022.09.03homework3\Task2\Source.cpp(42,6): message : see declaration of 'sort'
