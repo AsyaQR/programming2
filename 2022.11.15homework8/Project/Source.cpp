@@ -24,7 +24,7 @@ public:
 	}
 	void operator()(Type2 a, Type3 b)
 	{
-		swap(a, b);
+		foo(a, b);
 		ofstream file("log.txt");
 		file << a << " " << b << cout;
 		file.close();
