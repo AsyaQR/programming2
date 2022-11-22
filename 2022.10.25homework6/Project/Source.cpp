@@ -10,24 +10,38 @@ int main()
 	string outname;
 	cout << "Enter input file name: ";
 	cin >> inname;
-	cout << "Enter output file name: ";
-	cin >> outname;
-	ifstream infile(inname);
-	ofstream outfile(outname);
-
-	string str;
-	int n;
-	int pren = 1;
-	while (!infile.eof())
+	try
 	{
-		infile >> str;
-		n = stoi(str);
-		outfile << n * n << " ";
-		outfile << double(n) / pren << endl;
-		pren = n;
+		cout << "Enter output file name: ";
+		cin >> outname;
+		if (outname == inname) throw ("cannot use this file to output");
+		ifstream infile(inname);
+		if (!infile.is_open()) throw ("infile did not open");
+		ofstream outfile(outname);
+		if (!outfile.is_open()) throw ("outfile did not open");
+
+		string str;
+		int n;
+		int pren = 1;
+		while (!infile.eof())
+		{
+			infile >> str;
+			if (str[0] > 47 || str[0] > 57) throw ("there are not numbers in file");
+			n = stoi(str);
+			if (n > 46340) throw ("too big number");
+			outfile << n * n << " ";
+			if (pren == 0) throw ("devision by zero");
+			outfile << double(n) / pren << endl;
+			pren = n;
+		}
+
+		infile.close();
+		outfile.close();
 	}
-	infile.close();
-	outfile.close();
+	catch(const char* error)
+	{
+		cout << error;
+	}
 
 	return 0;
 }
