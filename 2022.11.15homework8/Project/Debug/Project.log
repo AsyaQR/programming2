@@ -1,12 +1,2 @@
 ﻿  Source.cpp
-C:\Users\79292\Desktop\hw2\2022.11.15homework8\Project\Source.cpp(37,39): error C2664: 'Shell<void,int,int>::Shell(Type1 (__cdecl *)(Type2,Type3))': cannot convert argument 1 from 'Type1 (__cdecl *)(Type2 *,Type3 *)' to 'Type1 (__cdecl *)(Type2,Type3)'
-          with
-          [
-              Type1=void,
-              Type2=int,
-              Type3=int
-          ]
-C:\Users\79292\Desktop\hw2\2022.11.15homework8\Project\Source.cpp(37,35): message : None of the functions with this name in scope match the target type
-C:\Users\79292\Desktop\hw2\2022.11.15homework8\Project\Source.cpp(21,2): message : see declaration of 'Shell<void,int,int>::Shell'
-  Source1.cpp
-  Generating Code...
+  Project.vcxproj -> C:\Users\79292\Desktop\hw2\2022.11.15homework8\Debug\Project.exe

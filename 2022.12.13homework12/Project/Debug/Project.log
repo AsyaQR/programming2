@@ -1,0 +1,4 @@
+﻿  Source.cpp
+C:\Users\79292\Desktop\hw2\2022.12.13homework12\Project\Source.cpp(28,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\79292\Desktop\hw2\2022.12.13homework12\Project\Source.cpp(15): warning C4715: 'f': not all control paths return a value
+  Project.vcxproj -> C:\Users\79292\Desktop\hw2\2022.12.13homework12\Debug\Project.exe

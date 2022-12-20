@@ -1,32 +1,35 @@
 #include <iostream>
 #include <fstream>
+#include <ctime>
 
 using namespace std;
 
-template<typename Type1, typename Type2, typename Type3>
-Type1 swap(Type2* a, Type3* b)
+void print()
 {
-	Type2* c;
-	a = c;
-	a = b;
-	b = c;
+	cout << "1";
 }
 
-template<typename Type1, typename Type2, typename Type3>
+template<typename Type>
+using ffree = Type (*)();
+
 class Shell
 {
 private:
-	Type1* foo;
+	ffree<void> foo;
+	ofstream file;
 public:
-	Shell(Type1(*f)(Type2, Type3))
+	Shell(ffree<void> f)
 	{
-		foo = *f;
+		file = ofstream("log.txt");
+		foo = f;
 	}
-	void operator()(Type2 a, Type3 b)
+	void operator()()
 	{
-		foo(a, b);
-		ofstream file("log.txt");
-		file << a << " " << b << cout;
+		foo();
+		file << clock() << endl;
+	}
+	~Shell()
+	{
 		file.close();
 	}
 };
@@ -34,6 +37,11 @@ public:
 
 int main()
 {
-	Shell<void, int, int> shell_swap(swap);
+	ffree<void> func = &print;
+	Shell shell_swap(func);
+	shell_swap();
+	shell_swap();
+	shell_swap();
+	shell_swap();
 	return 0;
 }

@@ -1,7 +1,18 @@
 ﻿  Source.cpp
-C:\Users\79292\Desktop\Solution1\Project1\Source.cpp(76,1): error C2679: binary '=': no operator found which takes a right-hand operand of type 'Vector<int> *' (or there is no acceptable conversion)
-C:\Users\79292\Desktop\Solution1\Project1\Source.cpp(248,1): message : could be 'Vector<int> &Vector<int>::operator =(const Vector<int> &)'
-C:\Users\79292\Desktop\Solution1\Project1\Source.cpp(76,1): message : while trying to match the argument list '(Vector<int>, Vector<int> *)'
-C:\Users\79292\Desktop\Solution1\Project1\Source.cpp(68): message : while compiling class template member function 'Vector<int>::Vector(std::ifstream &)'
-C:\Users\79292\Desktop\Solution1\Project1\Source.cpp(262): message : see reference to function template instantiation 'Vector<int>::Vector(std::ifstream &)' being compiled
-C:\Users\79292\Desktop\Solution1\Project1\Source.cpp(254): message : see reference to class template instantiation 'Vector<int>' being compiled
+C:\Users\79292\Desktop\hw2\2022.11.08homework7\Project1\Source.cpp(61,1): error C2523: 'Vector<t>::~VectorM': destructor tag mismatch
+C:\Users\79292\Desktop\hw2\2022.11.08homework7\Project1\Source.cpp(198): message : see reference to class template instantiation 'Vector<t>' being compiled
+C:\Users\79292\Desktop\hw2\2022.11.08homework7\Project1\Source.cpp(61,10): error C2143: syntax error: missing ';' before '<'
+C:\Users\79292\Desktop\hw2\2022.11.08homework7\Project1\Source.cpp(61,3): error C2524: 'Vector<t>': a destructor must have a 'void' parameter list
+C:\Users\79292\Desktop\hw2\2022.11.08homework7\Project1\Source.cpp(62,1): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+C:\Users\79292\Desktop\hw2\2022.11.08homework7\Project1\Source.cpp(181,10): error C2143: syntax error: missing ';' before '='
+C:\Users\79292\Desktop\hw2\2022.11.08homework7\Project1\Source.cpp(181,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\79292\Desktop\hw2\2022.11.08homework7\Project1\Source.cpp(181,33): error C2143: syntax error: missing ',' before '<'
+C:\Users\79292\Desktop\hw2\2022.11.08homework7\Project1\Source.cpp(182,1): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\79292\Desktop\hw2\2022.11.08homework7\Project1\Source.cpp(183,8): error C2065: 'arr': undeclared identifier
+C:\Users\79292\Desktop\hw2\2022.11.08homework7\Project1\Source.cpp(183,8): error C3861: 'arr': identifier not found
+C:\Users\79292\Desktop\hw2\2022.11.08homework7\Project1\Source.cpp(187,17): error C3861: 'arr': identifier not found
+C:\Users\79292\Desktop\hw2\2022.11.08homework7\Project1\Source.cpp(188,20): error C3861: 'arr': identifier not found
+C:\Users\79292\Desktop\hw2\2022.11.08homework7\Project1\Source.cpp(193,14): error C3861: 'arr': identifier not found
+C:\Users\79292\Desktop\hw2\2022.11.08homework7\Project1\Source.cpp(61,1): error C2523: 'Vector<int>::~VectorM': destructor tag mismatch
+C:\Users\79292\Desktop\hw2\2022.11.08homework7\Project1\Source.cpp(229): message : see reference to class template instantiation 'Vector<int>' being compiled
+C:\Users\79292\Desktop\hw2\2022.11.08homework7\Project1\Source.cpp(61,3): error C2524: 'Vector<int>': a destructor must have a 'void' parameter list
